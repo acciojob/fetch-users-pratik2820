@@ -15,7 +15,7 @@ const PeopleList = () =>{
         setLoading(true);
         console.log(response);
     }).catch((error)=>{
-        console.log(error);
+        setLoading(false)
     })
    }
 
@@ -49,6 +49,9 @@ const PeopleList = () =>{
                         }
                     </tbody>
                 </table>
+            }
+            {
+                loading ? false :<p>No data found to display.</p>
             }
             
         </div>
