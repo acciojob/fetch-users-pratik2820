@@ -51,8 +51,6 @@ const PeopleList = () =>{
                 </table>
             }
             
-
-
         </div>
     )
 }
